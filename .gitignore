@@ -1,0 +1,146 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+*.pyd
+*.dll
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+wheels/
+var/
+*.egg-info/
+.installed.cfg
+pip-wheel-metadata/
+*.egg
+
+# Unit test / coverage reports
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.pybuilder/
+.pybuilder/
+.pyre/
+.pyright/
+.hypothesis/
+.pytype/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Type checkers / linters
+.ruff_cache/
+.mypy_cache/
+.pytype/
+.pyright/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+conda_env/
+
+# PEP 582
+__pypackages__/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Django (not used here, but harmless)
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask instance folder
+instance/
+.webassets-cache
+
+# Scrapy
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+doc/_build/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# dotenv environment variables
+.env
+
+# OS / Editor files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDEs and editors
+.vscode/
+.idea/
+*.iml
+*.sublime-project
+*.sublime-workspace
+.history/
+*.swp
+*.swo
+
+# Cache and temporary
+tmp/
+temp/
+*.tmp
+*.bak
+*.old
+
+# Poetry / PDM / Hatch (optional local state)
+.pdm-python
+.pdm-build/
+.pyproject-build/
+.hypothesis/
+
+# Node-style lockfiles occasionally present in mixed repos (keep if needed)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Custom config files
+cookies.json
+.vercel
+
+
+client.py

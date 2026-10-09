@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "terabox-gateway"
+version = "2.0.2"
+description = "Fast Python gateway for extracting metadata, thumbnails, direct download links, and HLS streaming support from TeraBox share URLs."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "terabox",
+    "gateway",
+    "terabox-bypass",
+    "terabox-gateway",
+    "terabox-api",
+    "terabox-hls",
+    "metadata",
+    "thumbnails",
+    "direct download links"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: Flask",
+]
+
+dependencies = [
+    "Flask[async]>=3.1,<4",
+    "aiohttp>=3.9.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+]
+
+[project.license]
+text = "MIT"
+
+[[project.authors]]
+name = "Shakir Ansari"
+email = "shakir.ansarii075@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/kyy-95631488/TeraGate"
+Repository = "https://github.com/kyy-95631488/TeraGate"
+Issues = "https://github.com/kyy-95631488/TeraGate/issues"
+"Live Demo" = "https://tera-core.vercel.app/"
+
+[project.scripts]
+terabox-gateway = "terabox_gateway.main:cli"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"terabox_gateway" = ["swagger/swagger.json"]
